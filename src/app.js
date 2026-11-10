@@ -28,7 +28,7 @@ async function play(){
     const a=hasSelection()?start:0,b=hasSelection()?end:duration(clip);
     if(cursor<a||cursor>=b-1/clip.sampleRate)cursor=a;
     if(!audioBuffer){audioBuffer=ctx.createBuffer(clip.channels.length,clip.channels[0].length,clip.sampleRate);clip.channels.forEach((c,i)=>audioBuffer.copyToChannel(c,i));}
-    source=ctx.createBufferSource();source.buffer=audioBuffer;source.connect(gainNode);source.loop=looping;source.loopStart=start;source.loopEnd=b;
+    source=ctx.createBufferSource();source.buffer=audioBuffer;source.connect(gainNode);source.loop=looping;source.loopStart=start<b?start:0;source.loopEnd=b;
     playStart=cursor;playEnd=b;loopOrigin=source.loopStart;playTime=ctx.currentTime;playing=true;
     source.onended=()=>{cursor=b;stop();status('Playback finished.');};
     if(looping)source.start(0,cursor);else source.start(0,cursor,b-cursor);
