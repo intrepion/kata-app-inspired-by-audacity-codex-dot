@@ -4,6 +4,8 @@
 
 ![Kata Wave Room desktop editor](docs/screenshots/desktop.jpg)
 
+[Open the app](https://intrepion.github.io/kata-app-inspired-by-audacity-codex-dot/) · [Source repository](https://github.com/intrepion/kata-app-inspired-by-audacity-codex-dot)
+
 ## Run locally
 
 Node.js 18 or newer. No installation, dependencies, account, or bundler required.

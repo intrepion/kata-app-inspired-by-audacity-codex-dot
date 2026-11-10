@@ -53,5 +53,7 @@
     "name": "Audacity",
     "url": "https://www.audacityteam.org/"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "repositoryUrl": "https://github.com/intrepion/kata-app-inspired-by-audacity-codex-dot",
+  "appUrl": "https://intrepion.github.io/kata-app-inspired-by-audacity-codex-dot/"
 }
