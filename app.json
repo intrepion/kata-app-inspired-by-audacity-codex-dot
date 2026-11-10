@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "kind": "app",
+  "title": "Kata Wave Room",
+  "repository": "kata-app-inspired-by-audacity-codex-dot",
+  "section": "Kata Tool Shed",
+  "category": "Audio",
+  "tagline": "Make room for the good parts.",
+  "description": "A local-first, single-clip audio editor. Select a region, trim or shape it, listen, and export a WAV.",
+  "entryPoint": "index.html",
+  "status": "ready",
+  "features": [
+    "Local mono/stereo audio import",
+    "Waveform and numeric selection",
+    "Trim, delete, silence and reverse",
+    "Fades, gain and peak normalization",
+    "Undo and redo",
+    "Playback and looping",
+    "16-bit PCM WAV export"
+  ],
+  "screenshots": [
+    {
+      "src": "docs/screenshots/desktop.jpg",
+      "width": 1133,
+      "height": 1203,
+      "alt": "Kata Wave Room desktop editor with stereo waveform, selected audio range, editing controls and WAV export",
+      "caption": "Daylight study with a six-second selection.",
+      "capturedAt": "2026-11-10T00:07:53.637326+00:00",
+      "sha256": "8df4ac233ea6b532fc7dfcac7b1971d5896020b8e0d682df3237f0cd02066d1f",
+      "source": "http://127.0.0.1:4174/",
+      "captureMethod": "Chrome via CUA, genuine full-page browser capture; no image editing.",
+      "viewport": "Default connected browser viewport",
+      "build": "Local pre-publication app; captured before final selection/playback edge-case patches."
+    },
+    {
+      "src": "docs/screenshots/mobile.jpg",
+      "width": 375,
+      "height": 1536,
+      "alt": "Kata Wave Room mobile editor with stereo waveform, selected audio range, editing controls and WAV export",
+      "caption": "Daylight study with a six-second selection.",
+      "capturedAt": "2026-11-10T00:08:11.462202+00:00",
+      "sha256": "f9afbaf0ca04e41300b99665c0eefa2eacec202c2c07e5f28c9f71108e644e56",
+      "source": "http://127.0.0.1:4174/",
+      "captureMethod": "Chrome via CUA, genuine full-page browser capture; no image editing.",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "build": "Local pre-publication app; captured before final selection/playback edge-case patches."
+    }
+  ],
+  "inspiration": {
+    "name": "Audacity",
+    "url": "https://www.audacityteam.org/"
+  },
+  "license": "MIT"
+}

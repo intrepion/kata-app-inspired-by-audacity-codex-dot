@@ -1,0 +1,16 @@
+{
+  "name": "kata-app-inspired-by-audacity-codex-dot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kata Wave Room: a local-first, single-clip audio editor.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check src/app.js && node --check src/audio.js && node --check src/selection.js && node --check server.mjs && npm test",
+    "build": "node scripts/build.mjs"
+  },
+  "engines": { "node": ">=18" },
+  "license": "MIT"
+}
